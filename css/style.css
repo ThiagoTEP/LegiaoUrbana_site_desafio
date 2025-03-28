@@ -1,0 +1,778 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: legiao;
+    src: url("../fonts/legiao\ Revolution.ttf");
+}
+@font-face {
+    font-family: legiaomenu;
+    src: url("../fonts/legiaofont2.ttf");
+}
+@font-face {
+    font-family: legiaodrop;
+    src: url("../fonts/legiaofont3.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+
+#header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #BFBFBF;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.img-header > img{
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    width: 10vh;
+    z-index: 2;
+}
+
+.texto-header{
+    font-size: 5vw;
+    font-family: legiao;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;  
+}
+
+.fundo-img{
+    position: absolute;
+    top: -2%;
+    background-image: url("../imagens/legiao-urbana-as-quatro-estacoes.jpg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: 1;
+}
+/* NAV */
+
+#nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #BFBFBF;
+    padding: 0.5% 10%;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.515);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    width: 100px;
+}
+
+.dropbtn{
+    color: black;
+    font-size: 1.8em;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+h2{
+    font-weight: 400;
+    font-family: legiaomenu;
+}
+h2:hover{
+    background-color: rgba(0, 0, 0, 0.190);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.181);
+}
+.btn{
+    text-decoration: none;    
+}
+.search > span{
+    color: black;
+    font-size: 1.8em;  
+    font-weight: bold;
+    text-align: center;
+    margin-right: 10px;
+    width: 110px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.359);
+}
+.search > span:hover{
+    background-color: rgba(0, 0, 0, 0.190);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.181);
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.active{
+    color: black;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: legiaodrop;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border-radius: 15px;
+    
+
+}
+
+.active:hover{
+    background-color: #f1f1f1;
+    border: 0.5px solid rgba(0, 0, 0, 0.197);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.27);
+
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* Main */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin: 15px 1%;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+}
+h3{
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 8px;
+    
+}
+
+.section1, .section2 {
+    width: 100%;
+    min-width: 390px;
+    height: 1080px;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.integ{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 135px;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.121);
+}
+.integfoto{
+    width: 35%;    
+    overflow: hidden;
+    border-radius: 15px 0px 0px 0px;
+}
+
+.parginteg{
+    padding: 1%;
+    width: 75%;
+    overflow: hidden;
+}
+.parginteg > p{
+    margin-top: 1%;
+    text-align: justify;
+    text-indent: 10px;
+}
+
+/* Section 2 telemovel */
+
+.section2{
+    position: relative;
+    overflow: hidden;
+}
+
+.fotosec2{
+    position: absolute;
+    height: 650px;
+    
+}
+
+.telainicial{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 200px;
+    height: 300px;
+    z-index: -3;
+}
+
+.spotifylogo{
+    width: 200px;
+    filter: grayscale(6);
+}
+
+h5{
+    color: rgba(0, 0, 0, 0.592);
+    font-family: legiaodrop;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 60px;
+    width: 200px;
+    z-index: -3;
+}
+
+.seta{
+    position: absolute;
+    left: 50px;
+    width: 100px;
+    opacity: 0.8;
+    z-index: -3;
+}
+
+/* menu telemovel*/
+
+.acionamento{
+    position: relative;
+    
+}
+.contentor{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 1090px;
+    background-color: transparent;
+    z-index: 1;
+    background-color: #f9f9f9;
+}
+
+
+.ecradiscos{
+    position: absolute;
+    top: 13px;
+    left: 60px;
+    width: 236px;
+    height: 503px;
+    padding-top: 20px;
+    border-radius: 23px;
+    background-color: #000000da;
+}
+.btndiscos{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    z-index: 4;
+    border: 1px solid rgba(0, 0, 0, 0.152);
+    overflow: hidden;
+    opacity: 0.6;
+    filter: grayscale(1);
+}
+
+.btndiscos >img{
+    width: 80px;
+    height: 80px;
+}
+
+.btn1{
+    top: 10px;
+    right: 1%;
+}
+
+.btn2{
+    top: 100px;
+    right: 1%;
+}
+
+.btn3{
+    top: 190px;
+    right: 1%;
+}
+.btn4{
+    top: 280px;
+    right: 1%;
+}
+
+.btn5{
+    top: 370px;
+    right: 1%;
+}
+
+.btn6{
+    top: 460px;
+    right: 1%;
+}
+
+.btn7{
+    top: 550px;
+    right: 1%;
+}
+
+.btn8{
+    top: 550px;
+    right: 100px;
+}
+
+.btn9{
+    top: 550px;
+    right: 190px;
+}
+
+.btndiscos:hover{
+    transform: translate(-15px , -5px);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.685);
+    transition: transform 0.3s, border 0.4s;
+    z-index: 5;
+    opacity: 1;
+    filter: grayscale(0);
+}
+.acionamento:hover .contentor{
+    display: block;
+    background-color: transparent;
+}
+
+.discos{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0px;
+    width: 100%;
+    height: 436px;
+    align-self: flex-end;
+    border: 0.3 solid rgba(0, 0, 0, 0.147);
+   
+}
+
+.discosfundo{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0px;
+    width: 100%;
+    height: 425px;
+    align-self: flex-end;
+    background-image: url("../imagens/bandadisc.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.discosfundo > h6{
+    position: absolute;
+    font-size: 3em;
+    font-family: legiao;   
+}
+
+/* aside */
+
+#aside{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 1250px;
+    width: 102%;
+    height: 1410px;
+   
+}
+
+.fundoaside{
+    position: absolute;
+    top: 160px;
+    left: 5px;
+    width: 520px;
+    opacity: 0.7;
+}
+
+.fundoaside1{
+    position: absolute;
+    top: 570px;
+    right: 5px;
+    width: 320px;
+    filter: grayscale(1);
+    opacity: 0.7;
+}
+
+.fundoaside2{
+    position: absolute;
+    top: 1070px;
+    left: 5px;
+    width: 510px;
+    filter: grayscale(1);
+    opacity: 0.7;
+}
+
+.titcurios{
+    position: absolute;
+    color: black;
+    font-size: 5em;
+    font-family: legiao;
+    letter-spacing: 5px;
+    z-index: 2;
+}
+
+.t1{
+    left: 10px;
+    margin-top: 60px;
+}
+
+.t2{
+   right: 20px;
+    margin-top: 510px;
+}
+
+.t3{
+    left: 10px;
+    margin-top: 960px;
+}
+
+.chamadas{
+    background-color:#bfbfbf4b;
+    width: 750px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.824);
+}
+
+
+.chamadas > iframe{
+    margin-top: 75px;
+    margin-left: 13%;
+    border: 2px solid black;
+    border-radius: 15px;
+    filter: grayscale(1);
+    opacity: 0.5;
+}
+
+.chamadas > iframe:hover{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+
+.box1{
+    position: absolute;
+    top: 60px;
+    right: -20px;
+}
+
+.box2{
+    position: absolute;
+    top: 510px;
+    left: -20px;
+    box-shadow: -5px 5px 5px rgba(24, 24, 24, 0.824);
+    
+}
+
+.box3{
+    position: absolute;
+    top: 960px;
+    right: -20px;
+}
+
+/* FOOTER */
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color:#262626 ;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0px;
+    box-shadow: -5px -10px 20px rgba(0, 0, 0, 0.515);
+}
+
+/* REDES SOCIAIS */
+
+.footer0{
+    width: 100%;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+}
+
+.redes-sociais{
+    border: 3px solid white;
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+    overflow: hidden;
+}
+.imgsocial{
+    width: 100%;
+    height: 100%;
+    background-color: white;  
+}
+
+.imgface{
+    width: 120%;
+    height: 120%;
+    translate: -5px -5px;
+    background-color: white;  
+}
+
+.redes-sociais:hover{
+    translate: -4px -4px;
+    box-shadow: 0px 0px 15px white;
+}
+
+
+/* LOGO BANDA */
+
+.footer1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20%;
+    width: 100%;
+    height: 350px;
+}
+
+/* CONTATO */
+.contato1{
+    width: 300px;
+    height: 100%;   
+}
+
+.contato1 > img{
+    padding: 20px 10px;
+    filter: brightness(8);
+}
+
+.contato2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 300px;
+    min-width: 300px;
+    height: 100%;
+}
+
+#formulario{
+    display: block;
+    padding: 10px;
+}
+h11{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+    /* border: 2px solid white; */
+
+}
+
+.campo{
+    font-size: 0.8em;
+    background-color: #8C8C8C;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 7px 0px;
+}
+.campo > span{
+    color: white;
+    transform: translate(0, 25%);
+    padding-left: 5px;
+}
+.campo > input{
+    width: 80%;
+    height: 90%;
+    background-color: #8C8C8C;
+    color: white;
+    border: none;
+}
+.campo >input:hover{
+    background-color: #BFBFBF;
+}
+
+.campo:hover{
+    background-color: #BFBFBF;
+}
+
+::placeholder{
+    color: white;
+    text-align: left;
+}
+
+#enviar{
+    color: white;
+    background-color: #8C8C8C;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+#enviar:hover{
+    background-color: #BFBFBF;
+}
+
+/* meu logotipo */
+
+.footer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-right: 30px;
+    width: 100%;
+    height: 120px;
+}
+
+.textfooter{
+    color: white;
+    font-size: 0.8em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+}
+  
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.registro{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+  
+#logo1{
+    filter: grayscale(1);
+}
+
+#ring {
+    width: 100px;
+    height: 100px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#ring:nth-child(1) {
+    border-bottom: 8px solid #BFBFBF;
+    animation: logothi1 2s linear infinite;
+}
+
+@keyframes logothi1 {
+    from {
+        transform: rotateX(50deg) rotateZ(110deg);
+    }
+
+    to {
+        transform: rotateX(50deg) rotateZ(470deg);
+    }
+}
+
+#ring:nth-child(2) {
+    border-bottom: 8px solid #8C8C8C;
+    animation: logothi2 2s linear infinite;
+}
+
+@keyframes logothi2 {
+from {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
+}
+
+to {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
+}
+}
+
+#ring:nth-child(3) {
+    border-bottom: 8px solid #595959;
+    animation: logothi3 2s linear infinite;
+}
+
+@keyframes logothi3 {
+    from {
+     transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+    }
+
+    to {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+    }
+}
+
+#ring:nth-child(4) {
+    border-bottom: 8px solid #404040;
+    animation: logothiago4 2s linear infinite;
+}
+
+@keyframes logothiago4 {
+    from {
+       transform: rotateX(70deg) rotateZ(270deg);
+    }
+
+    to {
+     transform: rotateX(70deg) rotateZ(630deg);
+    }
+}
+
+/* outras paginas */
+
+#sectionconstr{
+    width: 100%;
+    max-width: 1024px;
+    height: 50vh;
+    background-image: url(../imagens/fundolaterallegiao.png);
+    opacity: 0.1;
+}
